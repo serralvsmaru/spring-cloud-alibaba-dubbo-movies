@@ -1,0 +1,10 @@
+dubbo:
+  scan:
+    base-packages: com.konosuba.dubbo.movies.image.service.impl
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://192.168.203.133:8848
+  cloud:
+    subscribed-services:

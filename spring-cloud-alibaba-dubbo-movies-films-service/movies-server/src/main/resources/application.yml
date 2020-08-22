@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dev, druid, dubbo, mybatis-plus
+  application:
+    name: movies-server-xtl
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: 192.168.203.133:8848
+
+server:
+  port: 8093
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

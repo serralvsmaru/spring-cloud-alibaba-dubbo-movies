@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.konosuba.dubbo.movies.image.mapper.ImageMapper">
+  <resultMap id="BaseResultMap" type="com.konosuba.dubbo.movies.image.domain.entity.Image">
+    <!--@mbg.generated-->
+    <!--@Table tb_image-->
+    <id column="image_id" jdbcType="INTEGER" property="imageId" />
+    <result column="image_address" jdbcType="VARCHAR" property="imageAddress" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    image_id, image_address
+  </sql>
+</mapper>

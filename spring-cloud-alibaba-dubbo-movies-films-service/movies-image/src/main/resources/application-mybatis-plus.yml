@@ -1,0 +1,16 @@
+mybatis-plus:
+  # 实体扫描，多个包用逗号或隔开
+  type-aliases-package: com.konosuba.dubbo.movies.image.domain.entity
+  # 若是放在src/main/java目录下 classpath:/com/你的包名/*/mappers/*.xml
+  # 若是放在src/main/resources目录下
+  mapper-locations: classpath:/mapper/**/*.xml
+  global-config:
+    db-config:
+      # 主键类型
+      id-type: auto
+      #驼峰下划线转换
+      table-underline: true
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+  configuration:
+    log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl

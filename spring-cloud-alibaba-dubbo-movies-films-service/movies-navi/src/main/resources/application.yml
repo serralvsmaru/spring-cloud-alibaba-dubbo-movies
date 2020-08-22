@@ -1,0 +1,21 @@
+
+
+spring:
+  profiles:
+    active: dev, druid, dubbo, mybatis-plus
+  application:
+    name: movies-navi-xtl
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.203.133:8848
+        enabled: true
+
+server:
+  port: 8092
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.konosuba.dubbo.movies.navi.mapper.NaviMapper">
+  <resultMap id="BaseResultMap" type="com.konosuba.dubbo.movies.navi.domain.entity.Navi">
+    <!--@mbg.generated-->
+    <!--@Table tb_navi-->
+    <id column="navi_id" jdbcType="INTEGER" property="naviId" />
+    <result column="navi_name" jdbcType="VARCHAR" property="naviName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    navi_id, navi_name
+  </sql>
+</mapper>

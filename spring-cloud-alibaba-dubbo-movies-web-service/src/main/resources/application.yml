@@ -1,0 +1,19 @@
+spring:
+  profiles:
+    active: dubbo
+  application:
+    name: web-service-xtl
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 192.168.203.133:8848
+        enabled: true
+
+server:
+  port: 8094
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

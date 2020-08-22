@@ -1,0 +1,10 @@
+dubbo:
+  scan:
+    base-packages: com.konosuba.spring.cloud.alibaba.dubbo.movies.web.service.controller
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: nacos://192.168.203.133:8848
+  cloud:
+    subscribed-services: movies-image-xtl, movies-navi-xtl, movies-server-xtl
